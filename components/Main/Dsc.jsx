@@ -5,10 +5,9 @@ export default function Dsc() {
     <div className={`${style.dsc}`}>
       <div className={`${style.dscDescription}`}>
         <p>
-          A dedicated and enthusiastic final-year student&apos; fueled by a
-          profound passion for the intricate realms of UI/UX design and the
-          dynamic landscape of web development, seeking to explore&apos;
-          innovate&apos;
+          A dedicated and enthusiastic final-year student, fueled by a profound
+          passion for the intricate realms of UI/UX design and the dynamic
+          landscape of web development, seeking to explore, innovate.
         </p>
       </div>
       <div className={`${style.foot}`}>

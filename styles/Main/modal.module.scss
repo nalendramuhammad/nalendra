@@ -12,6 +12,7 @@
   align-items: flex-end; // Align items to the bottom
   z-index: 1000;
   overflow: hidden;
+  transition: background-color 0.5s ease-in-out;
 
   .modalContent {
     background-color: #fff;
@@ -19,9 +20,7 @@
     width: 935px;
     height: 500px;
     border-radius: 5px;
-    transform: translateY(
-      100%
-    ); // Initially translate the modal below the screen
+    transform: translateY(100%); // Initially hide the modal
     transition: transform 0.3s ease-in-out;
     .inputhead {
       display: flex;
@@ -33,11 +32,15 @@
         background-color: transparent;
         border-top: none;
         border-left: none;
+        text-indent: 5px;
         border-right: none;
         border-color: #000;
         border-width: 2px;
         &::placeholder {
           color: #000; // Change the placeholder color to your desired color
+        }
+        &:focus {
+          outline: none;
         }
       }
     }
@@ -50,11 +53,15 @@
         background-color: transparent;
         border-top: none;
         border-left: none;
+        text-indent: 5px;
         border-right: none;
         border-color: #000;
         border-width: 2px;
         &::placeholder {
           color: #000; // Change the placeholder color to your desired color
+        }
+        &:focus {
+          outline: none;
         }
       }
       textarea {
@@ -64,20 +71,35 @@
         background-color: transparent;
         border-top: none;
         border-left: none;
+        text-indent: 5px;
         border-right: none;
         border-color: #000;
         border-width: 2px;
         &::placeholder {
           color: #000; // Change the placeholder color to your desired color
         }
+        &:focus {
+          outline: none;
+        }
       }
     }
     button {
       margin-top: 50px;
     }
+    &.modalVisible {
+      transform: translateY(0);
+    }
+  }
+  &.modalVisible {
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.5
+    ); // Adjust the background color when modal is visible
   }
 
-  &:hover .modalContent {
-    transform: translateY(0);
-  }
+  // &:hover .modalContent {
+  //   transform: translateY(0);
+  // }
 }
