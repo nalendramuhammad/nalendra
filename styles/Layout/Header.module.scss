@@ -1,0 +1,30 @@
+@use "../mixin.scss" as mixin;
+
+.navbar {
+  position: absolute;
+  display: flex;
+  background-color: #f6f1ee;
+  justify-content: space-between;
+  font-size: 20px;
+  font-family: switzerbold, sans-serif;
+  color: black;
+  width: 100%;
+  padding: 2rem 4rem;
+  height: 100px;
+  .navbarLogo {
+    display: none;
+  }
+  .navbarLeft {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    font-size: 20px;
+    font-family: switzerbold, sans-serif;
+    gap: 2rem;
+  }
+  .navbarRight {
+    color: black;
+    font-size: 20px;
+    font-family: switzerbold, sans-serif;
+  }
+}

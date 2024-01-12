@@ -1,0 +1,22 @@
+@use "../mixin.scss" as mixin;
+
+.dsc {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  background-color: #f6f1ee;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  .dscDescription {
+    font-family: Krylon;
+    font-size: 45px;
+    text-align: justify;
+    width: 800px;
+  }
+  .foot {
+    position: absolute;
+    bottom: 30px;
+  }
+}

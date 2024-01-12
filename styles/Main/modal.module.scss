@@ -1,0 +1,83 @@
+@use "../mixin.scss" as mixin;
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; // Align items to the bottom
+  z-index: 1000;
+  overflow: hidden;
+
+  .modalContent {
+    background-color: #fff;
+    padding: 2rem 2rem;
+    width: 935px;
+    height: 500px;
+    border-radius: 5px;
+    transform: translateY(
+      100%
+    ); // Initially translate the modal below the screen
+    transition: transform 0.3s ease-in-out;
+    .inputhead {
+      display: flex;
+      flex-direction: row;
+      margin-top: 30px;
+      gap: 150px;
+      input {
+        width: 350px;
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-color: #000;
+        border-width: 2px;
+        &::placeholder {
+          color: #000; // Change the placeholder color to your desired color
+        }
+      }
+    }
+    .subject {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+      input {
+        width: 670px;
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-color: #000;
+        border-width: 2px;
+        &::placeholder {
+          color: #000; // Change the placeholder color to your desired color
+        }
+      }
+      textarea {
+        // margin-top: 30px;
+        width: 670px;
+        height: 200px;
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-color: #000;
+        border-width: 2px;
+        &::placeholder {
+          color: #000; // Change the placeholder color to your desired color
+        }
+      }
+    }
+    button {
+      margin-top: 50px;
+    }
+  }
+
+  &:hover .modalContent {
+    transform: translateY(0);
+  }
+}

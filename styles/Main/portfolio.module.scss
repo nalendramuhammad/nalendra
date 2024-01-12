@@ -1,0 +1,48 @@
+@use "../mixin.scss" as mixin;
+
+.whole {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #f6f1ee;
+  justify-content: center;
+  color: black;
+  margin-top: 0;
+  .port__container {
+    display: flex;
+    flex-direction: column;
+    padding: 8rem 8rem;
+    font-weight: 600;
+    .port__container__title {
+      text-align: end;
+      font-size: 100px;
+    }
+    .port__container__kecil {
+      padding-left: 7px;
+    }
+    .port__container__name {
+      font-size: 100px;
+    }
+  }
+  .card__wrap {
+    padding: 0 8rem 3rem;
+    margin-top: -70px;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    .card {
+      p {
+        font-size: 35px;
+        margin-bottom: 20px;
+      }
+      .card__img {
+        width: 450px;
+        height: 500px;
+        border-radius: 10px;
+        background-color: black;
+      }
+    }
+  }
+}
