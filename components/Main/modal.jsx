@@ -18,7 +18,7 @@ const Modal = ({ onClose }) => {
       setIsVisible(false);
       setTimeout(() => {
         onClose();
-      }, 300); // Wait for the transition to complete before closing
+      }, 500); // Wait for the transition to complete before closing
     }
   };
   return (
@@ -33,13 +33,13 @@ const Modal = ({ onClose }) => {
         <form action="">
           <div className={style.inputhead}>
             <input
-              type="text"
+              type="email"
               id="email"
               name="email"
               placeholder="from"
               required
             />
-            <p>to Nalendras email</p>
+            <p>to Nalendra's email</p>
           </div>
           <div className={style.subject}>
             <input

@@ -31,7 +31,7 @@ export default function Header() {
         </Link>
       </div>
       <div className={`${style.navbarRight}`}>
-        <p onClick={handleContactClick}>Contact</p>
+        <button onClick={handleContactClick}>Contact</button>
       </div>
       {isModalOpen && <Modal onClose={handleCloseModal} />}
     </div>

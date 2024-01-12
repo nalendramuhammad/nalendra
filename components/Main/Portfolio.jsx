@@ -11,7 +11,7 @@ export default function Portfolio() {
           <p>a collection of</p>
         </div>
         <div className={`${style.port__container__name}`}>
-          <p>Nalendra Work</p>
+          <p>Nalendra's Work</p>
         </div>
       </div>
       <div className={`${style.card__wrap}`}>
