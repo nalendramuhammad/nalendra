@@ -39,7 +39,7 @@ const Modal = ({ onClose }) => {
               placeholder="from"
               required
             />
-            <p>to Nalendra's email</p>
+            <p>to Nalendra&apos;s email</p>
           </div>
           <div className={style.subject}>
             <input
