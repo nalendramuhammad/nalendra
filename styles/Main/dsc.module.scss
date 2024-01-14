@@ -20,3 +20,17 @@
     bottom: 30px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .dsc {
+    .dscDescription {
+      font-size: 30px;
+      font-size: 25px;
+      width: 200px;
+      font-weight: 500;
+    }
+    .foot {
+      font-size: 10px;
+    }
+  }
+}
