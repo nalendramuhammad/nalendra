@@ -69,10 +69,9 @@
 
 @media only screen and (max-width: 768px) {
   .esc {
-    height: 100vh;
+    // height: 100vh;
     .esc__container {
       .esc__container__title {
-        top: 100px;
         .word {
           margin-right: 0;
           .gatau {
@@ -88,7 +87,6 @@
         font-size: 50px;
       }
       .esc__container__foot {
-        bottom: 0;
         padding: 0 2rem;
         .esc__container__foot_left {
           p {
