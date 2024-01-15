@@ -66,3 +66,39 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .esc {
+    .esc__container {
+      .esc__container__title {
+        top: 120px;
+        .word {
+          margin-right: 0;
+          .gatau {
+            p {
+              span {
+                width: 30px;
+              }
+            }
+          }
+        }
+      }
+      .esc__container__main {
+        font-size: 50px;
+      }
+      .esc__container__foot {
+        padding: 0 2rem;
+        .esc__container__foot_left {
+          p {
+            font-size: 12px;
+          }
+        }
+        .esc__container__foot_right {
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

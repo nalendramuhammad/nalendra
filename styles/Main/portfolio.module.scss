@@ -46,3 +46,46 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .whole {
+    .port__container {
+      padding: 8rem 2rem;
+      font-weight: 600;
+      .port__container__title {
+        text-align: left;
+        font-size: 30px;
+        // display: none;
+        margin-bottom: 20px;
+      }
+      .port__container__kecil {
+        padding: 0;
+        font-size: 30px;
+      }
+      .port__container__name {
+        font-size: 30px;
+      }
+    }
+    .card__wrap {
+      padding: 0 2rem 3rem;
+      margin-top: -70px;
+      display: flex;
+      gap: 5rem;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      .card {
+        p {
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+        .card__img {
+          width: 250px;
+          height: 300px;
+          border-radius: 10px;
+          background-color: black;
+        }
+      }
+    }
+  }
+}
